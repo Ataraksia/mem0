@@ -4,9 +4,9 @@ from mem0.embeddings.base import EmbeddingBase
 
 
 class LiteLLMEmbedding(EmbeddingBase):
-    def __init__(self, model="text-embedding-ada-002"):
+    def __init__(self, model="embed-english-v3.0"):
         self.model = model
-        self.dims = 1536
+        self.dims = 1024
 
     def embed(self, text):
         """
