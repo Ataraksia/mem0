@@ -5,7 +5,7 @@ class OllamaEmbedding(EmbeddingBase):
     def __init__(self, model="nomic-embed-text"):
         self.model = model
         self._ensure_model_exists()
-        self.dims = 512
+        self.dims = 768
 
     def _ensure_model_exists(self):
         """

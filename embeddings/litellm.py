@@ -19,3 +19,5 @@ class LiteLLMEmbedding(EmbeddingBase):
             list: The embedding vector.
         """
         response = embedding(model=self.model, input=[text])
+        return(response['data'][0]['embedding'])
+
