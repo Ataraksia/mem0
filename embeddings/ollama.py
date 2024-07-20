@@ -1,6 +1,5 @@
 import ollama
-from embedding.base import EmbeddingBase
-
+from mem0.embeddings.base import EmbeddingBase
 
 class OllamaEmbedding(EmbeddingBase):
     def __init__(self, model="nomic-embed-text"):
